@@ -1,0 +1,70 @@
+window.onload = function () {
+
+    if (localStorage.getItem("nombreUsuario")) {
+
+        alert(
+            "¡Bienvenida de nuevo, " +
+            localStorage.getItem("nombreUsuario") +
+            "!"
+        );
+
+    }
+
+};
+
+
+
+// Formulario
+
+const formulario = document.querySelector("form");
+
+formulario.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const nombre =
+        document.querySelector('input[type="text"]').value;
+
+    const correo =
+        document.querySelector('input[type="email"]').value;
+
+    localStorage.setItem("nombreUsuario", nombre);
+
+    localStorage.setItem("correoUsuario", correo);
+
+    alert(
+        "Gracias " + nombre +
+        ". Tu mensaje se ha enviado correctamente."
+    );
+
+    formulario.reset();
+
+});
+
+
+
+// Contador de visitas
+
+let visitas = localStorage.getItem("visitas");
+
+if(visitas === null){
+
+    visitas = 1;
+
+}else{
+
+    visitas = Number(visitas) + 1;
+
+}
+
+localStorage.setItem("visitas", visitas);
+
+console.log("Visitas al portafolio: " + visitas);
+
+function saludar() {
+    alert("Hola, soy Paola Michel Amado Reyes. Gracias por visitar mi portafolio 💖");
+}
+
+function enviarMensaje() {
+    alert("✅ Mensaje enviado correctamente");
+}

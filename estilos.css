@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fdf2f8, #fce7f3);
+    color:#5f4b5b;
+    padding:30px;
+}
+
+.contenedor{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+header{
+    text-align:center;
+}
+
+.perfil{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #f4c2d7;
+    margin-bottom:20px;
+}
+
+h1{
+    color:#c06c84;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+       color:#8E445A;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+nav{
+    text-align:center;
+    margin:30px 0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#c06c84;
+    margin:0 15px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#e295b5;
+}
+
+section{
+    background:#fff7fa;
+    padding:30px;
+    margin-top:25px;
+    border-radius:20px;
+}
+
+h2{
+    text-align:center;
+    color:#c06c84;
+    margin-bottom:20px;
+}
+
+p{
+    text-align:center;
+    line-height:1.8;
+}
+
+article{
+    text-align:center;
+}
+
+address{
+    margin-top:20px;
+    font-style:normal;
+    color:#8d7288;
+}
+
+.tarjeta{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-top:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.tarjeta h3{
+    color:#c06c84;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:15px;
+    margin:10px 0;
+    border:2px solid #f4c2d7;
+    border-radius:12px;
+    font-family:'Poppins', sans-serif;
+}
+
+textarea{
+    min-height:120px;
+}
+
+button{
+    background:#d88c9a;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+button:hover{
+    background:#c06c84;
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    color:#8d7288;
+}
+
+@media(max-width:768px){
+
+    .contenedor{
+        padding:25px;
+    }
+
+    .perfil{
+        width:170px;
+        height:170px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+}
